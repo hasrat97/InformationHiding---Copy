@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<title> UerListViewPage </title>
+
+<h1> User List is Here!!</h1>
+
+    {% for i in allUsers%}
+
+        <p>
+            <h3> Username: {{i.user.username}}</h3> <br>
+        </p>
+
+    {% endfor %}
+
+{% endblock content %}
